@@ -5,27 +5,26 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    height: 100vh;
     background-color: black;
-    color: rgb(211, 211, 26);
-    
+    color: yellow;
+    align-items: center;
 }
 
 .fondo {
     background-image: url(../assets/fondolimpio.jpg);
-    text-align: center;
-    align-items: center;
     background-size: 100%;
-    height: 70vh;
+    height: 100vh;
     background-repeat: no-repeat;
-
+}
+.tabla{
+    padding: 0%;
+    margin: 0%;
 }
 
 .pacmanmotion {
     position: relative;
     animation: pacmanmotion 15s infinite; 
-    animation-delay: 1s;
-
 }
 
 
@@ -41,10 +40,19 @@ body {
     65% {top:130px ; left:130px;}
     70% {top: 200px; left: 130px;}   
     90% {top: 200px; left: 400px;}
-   
-    
   }
-  .centrar{
-    display: flex;
-    justify-content: center !important;
-  }
+  
+
+  @media screen and (min-width: 100px) and (max-width: 800px) {
+    body{
+        background-color: pink;
+    }
+    .fondo {
+        background-image: url(../assets/fondolimpio.jpg);
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    }
