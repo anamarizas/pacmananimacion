@@ -45,7 +45,7 @@ body {
 
   @media screen and (min-width: 100px) and (max-width: 800px) {
     body{
-        background-color: pink;
+        background-color: black;
     }
     .fondo {
         background-image: url(../assets/fondolimpio.jpg);
@@ -54,5 +54,21 @@ body {
         background-repeat: no-repeat;
         background-size: 100%;
     }
-
+    @keyframes pacmanmotion {
+        0%  {top: 0px; left: 0px;}
+        5%  {top: 35px; left: 0px;}  
+        10% {top: 35px; left: 95px;}
+        20% {top: 140px; left: 95px;}
+        25% {top:140px ; left:160px;}
+        35% {top: 200px; left: 160px;}
+        45% {top:200px ; left: 340px;}
+        55% {top: 260px; left: 340px;}
+        65% {top:260px ; left:480px;}
+        70% {top: 320px; left: 480px;}   
+        90% {top: 320px; left: 450px;}
+        95% {top: 365px; ; left:450px;}
+        100% {top: 365px; left: 490px;}
+        110% {top: 400px; left:490px ;}
+        
+      }
     }
