@@ -27,25 +27,30 @@ body {
     animation: pacmanmotion 15s infinite; 
 }
 
+/*tamaño de mi portatil*/
 
 @keyframes pacmanmotion {
-    0%  {top: 0px; left: 0px;}
-    5%  {top: 60px; left: 0px;}  
-    10% {top: 60px; left: 60px;}
-    20% {top: 120px; left: 60px;}
-    25% {top:120px ; left:130px;}
-    35% {top: 300px; left: 130px;}
-    45% {top:300px ; left: -120px; }
-    55% {top: 130px; left:-120px;}
-    65% {top:130px ; left:130px;}
-    70% {top: 200px; left: 130px;}   
-    90% {top: 200px; left: 400px;}
+    0%  {top: 0px; left: 0px; }
+    5%  {top: 50px; left: 0px; }  
+    10% {top: 50px; left: 150px; }
+    20% {top: 200px; left: 150px; }
+    25% {top:200px ; left:250px; }
+    35% {top: 300px; left: 250px; }
+    45% {top:300px ; left: 500px;  }
+    55% {top: 370px; left:500px; }
+    65% {top:370px ; left: 580px; }
+    70% {top: 200px; left: 580px;  }   
+    80% {top: 200px; left: 480px;  }
+    85% {top: 120px; left: 480px; rotate: 0deg; }
+    90% {top:120px; left:370px; rotate: 0deg; }
+    95% {top: 200px; left: 370px; rotate: 360deg;}
+
   }
   
 
-  @media screen and (min-width: 576px) and (max-width: 768px) {
+  @media screen and (min-width: 311px) and (max-width: 768px) {
     body{
-        background-color: black;
+        background-color: rebeccapurple;
     }
     .fondo {
         background-image: url(../assets/fondolimpio.jpg);
@@ -72,3 +77,38 @@ body {
         
       }
     }
+
+      @media screen and (min-width: 769px) and (max-width: 1200px) {
+        body{
+            background-color: peru;
+        }
+        .fondo {
+            background-image: url(../assets/fondolimpio.jpg);
+            width: 100vw;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        @keyframes pacmanmotion {
+            0%  {top: 0px; left: 0px; }
+            5%  {top: 50px; left: 0px; }  
+            10% {top: 50px; left: 150px; }
+            20% {top: 200px; left: 150px; }
+            25% {top:200px ; left:230px; }
+            35% {top: 280px; left: 230px; }
+            45% {top:280px ; left: 460px;  }
+            55% {top: 370px; left:460px; }
+            65% {top:370px ; left: 550px; }
+            70% {top: 200px; left: 550px;  }   
+            80% {top: 200px; left: 470px;  }
+            85% {top: 120px; left: 470px; rotate: 0deg; }
+            90% {top:120px; left:350px; rotate: 0deg; }
+            95% {top: 200px; left: 350px; rotate: 360deg;}
+          }
+      }
+      audio{
+        width: 200px;
+        border-radius: 100px;
+        transform: scale(1.05);
+     }
+      
